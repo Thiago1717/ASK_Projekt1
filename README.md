@@ -15,8 +15,8 @@ Wykonuję również odejmowanie w formacie U2, drukuję wyniki w postaci dziesi�
 Funkcja wyświetla reprezentację bajtową podanej liczby w formacie szesnastkowym.
 
 **Argumenty**:  
-- `void* dane` – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
-- `size_t rozmiar` – rozmiar liczby w bajtach.  
+- void* dane – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
+- size_t rozmiar – rozmiar liczby w bajtach.  
 
 **Kod funkcji**:
 ```c
@@ -29,8 +29,4 @@ void drukujBajty(void* dane, size_t rozmiar) {
 }
 ```
 
-**Przykład użycia**:
-```c
-int liczba = 123;
-drukujBajty(&liczba, sizeof(liczba));
-```
+
