@@ -9,8 +9,17 @@ Wykonuję również odejmowanie w formacie U2, drukuję wyniki w postaci dziesi�
 - **Konwersje typów** - program umożliwa konwersję liczb pomiędzy typami float, int oraz double.
 
 ## Opis Funkcji 
-**Reprezentacja bajtowa liczb**
+### 1. `drukujBajty`
 
+**Opis**:  
+Funkcja wyświetla reprezentację bajtową podanej liczby w formacie szesnastkowym.
+
+**Argumenty**:  
+- `void* dane` – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
+- `size_t rozmiar` – rozmiar liczby w bajtach.  
+
+**Kod funkcji**:
+```c
 void drukujBajty(void* dane, size_t rozmiar) {
     unsigned char* bajty = (unsigned char*)dane;
     for (size_t i = 0; i < rozmiar; i++) {
@@ -18,5 +27,10 @@ void drukujBajty(void* dane, size_t rozmiar) {
     }
     printf("\n");
 }
-**opis**
-dsadasd fsd
+```
+
+**Przykład użycia**:
+```c
+int liczba = 123;
+drukujBajty(&liczba, sizeof(liczba));
+```
