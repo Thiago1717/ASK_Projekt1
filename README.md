@@ -18,6 +18,7 @@ Funkcja drukuję postać bajtową dla typów int, float, double.
 - void* dane – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
 - size_t rozmiar – rozmiar liczby w bajtach.  
 - w pętli for pobierany jest pojedyńczy bajt i drukowany jest jego odpowiednik w formacie szesnastkowym.
+  
 **Kod funkcji**:
 ```c
 void drukujBajty(void* dane, size_t rozmiar) {
@@ -51,3 +52,29 @@ void drukujBinarnie(void* dane, size_t rozmiar) {
     printf("\n");
 }
 ```
+### 3. U2_odejmowanie
+
+**Opis** 
+Funkcja przedstawia zasadę odejmowania w U2.
+
+**Argumenty**
+- int liczbaA - pierwsza liczba całkowita.
+- int liczbaB - druga liczba całkowita.
+
+  **Kod funkcji**:
+```c
+void U2_odejmowanie(int liczbaA, int liczbaB) {
+    printf("Operand A w postaci binarnej: ");
+    drukujBinarnie(&liczbaA, sizeof(liczbaA));
+    printf("Operand B w postaci binarnej: ");
+    drukujBinarnie(&liczbaB, sizeof(liczbaB));
+
+    int wynik = liczbaA - liczbaB;
+
+    printf("Wynik w postaci binarnej: ");
+    drukujBinarnie(&wynik, sizeof(wynik));
+    printf("Wynik w postaci dziesietnej: %d\n", wynik);
+}
+```
+**Opis działania**
+Wyświetla reprezentację binarną podanych przez użytkownika liczb za pomocą funkcji drukujBinarnie. Następnie obliczany jest wynik odejmowania wynik = liczbaA - liczbaB, po czym wynik wyświetlany jest w postaci binarnej oraz dziesiętnej.
