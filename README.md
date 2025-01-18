@@ -17,7 +17,7 @@ Funkcja drukuję postać bajtową dla typów int, float, double.
 **Argumenty**:  
 - void* dane – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
 - size_t rozmiar – rozmiar liczby w bajtach.  
-- w pętli for pobierany jest pojedyńczy bajt i drukowany jest jego odpowiednik w formacie szesnastkowym.
+  
   
 **Kod funkcji**:
 ```c
@@ -29,6 +29,9 @@ void drukujBajty(void* dane, size_t rozmiar) {
     printf("\n");
 }
 ```
+**Opis działania pętli**
+W pętli for pobierany jest pojedyńczy bajt i drukowany jest jego odpowiednik w formacie szesnastkowym.
+
 ### 2. drukujBinarnie
 
 **Opis**
@@ -37,7 +40,7 @@ Funkcja wyświetla postać binarną podanej liczby
 **Argumenty** 
 - void* dane – wskaźnik na dane (liczba, której bajty chcemy wyświetlić).  
 - size_t rozmiar – rozmiar liczby w bajtach.
-- Pierwsza pętla for iteruje przez każdy bajt danych, druga pętla for przetwarza każdy bajt zaczynając od najbardziej znaczącego. Wynik obliczany jest za pomocą operacji przesunięcia bitowego.
+  
 
 **Kod funkcji**:
 ```c
@@ -52,6 +55,9 @@ void drukujBinarnie(void* dane, size_t rozmiar) {
     printf("\n");
 }
 ```
+**Opis działania pętli**
+Pierwsza pętla for iteruje przez każdy bajt danych, druga pętla for przetwarza każdy bajt zaczynając od najbardziej znaczącego. Wynik obliczany jest za pomocą operacji przesunięcia bitowego.
+
 ### 3. U2_odejmowanie
 
 **Opis** 
@@ -61,7 +67,7 @@ Funkcja przedstawia zasadę odejmowania w U2.
 - int liczbaA - pierwsza liczba całkowita.
 - int liczbaB - druga liczba całkowita.
 
-  **Kod funkcji**:
+**Kod funkcji**:
 ```c
 void U2_odejmowanie(int liczbaA, int liczbaB) {
     printf("Operand A w postaci binarnej: ");
