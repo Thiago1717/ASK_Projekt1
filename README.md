@@ -1,12 +1,13 @@
 ## Opis
-Jest to program w języku C, który demonstruje reprezentację binarną liczb całkowitych, zmiennoprzecinkowych oraz typu doble.
-Wykonuję również odejmowanie w formacie U2, drukuję wyniki w postaci dziesiętnej jak i binarnej.
+Program został napisany w języku C, drukuję postać bajtową liczb całkowitych, zmiennoprzecinkowych oraz typu double. 
+Te same liczby również wyświetla w formacie binarnym. Wykonuję odejmowanie w formacie U2, drukuję wyniki w postaci dziesiętnej jak i binarnej, 
+przedstawia konwersję liczb DEC -> FLOAT oraz FLOAT -> DEC
 
 ## Funkcje
 - **Reprezentacja bajtowa liczb** - program wyświetla dane w formie reperzentacji bajtowej (postać szesnastkowa).
 - **Reprezentacja binarna liczb** - program wyświetla liczby w formacie binarnym.
 - **Odejmowanie w U2** - program pokazuję odejmowanie w U2.
-- **Konwersje typów** - program umożliwa konwersję liczb pomiędzy typami float, int oraz double.
+- **Konwersje typów** - program umożliwa konwersję liczb pomiędzy typami DEC -> FLOAT, FLOAT -> DEC.
 
 ## Opis Funkcji 
 ### 1. drukujBajty
